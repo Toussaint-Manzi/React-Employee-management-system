@@ -7,6 +7,7 @@ import axios from 'axios';
 const App = () => {
   const [ todos , setTodos ] = useState("")
   const [ input, setInput ] = useState("")
+  const [ edit,setEdit ] = useState (null)
   const url = "http://localhost:8000/tasks"
 
 
@@ -33,8 +34,8 @@ const App = () => {
       <header className = 'header'>
        <p>To do App</p>
       </header>
-      <Forms todos= { todos } input={ input } setTodos= { setTodos } setInput={ setInput }/>
-     { todos.length > 0 ? <Todos todos={todos} onDelete={onDelete}/>  : 'No tasks yet'}
+      <Forms todos= { todos } input={ input } setTodos= { setTodos } setInput={ setInput } edit={edit} setEdit={setEdit}/>
+     { todos.length > 0 ? <Todos todos={todos} onDelete={onDelete} edit={edit} setEdit={setEdit}/>  : 'No tasks yet'}
     </div>
   )
 }

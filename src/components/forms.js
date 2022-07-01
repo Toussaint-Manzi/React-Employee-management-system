@@ -2,7 +2,7 @@ import {useEffect} from 'react';
 import axios from 'axios'
 import { v4 as uuidv4 } from 'uuid';
 
-const Forms = ( { todos, input, setTodos, setInput } ) => {
+const Forms = ( { todos, input, setTodos, setInput,edit , setEdit } ) => {
 
   const url = "http://localhost:8000/tasks"
 
@@ -10,16 +10,30 @@ const Forms = ( { todos, input, setTodos, setInput } ) => {
     setInput (e.target.value);
   }  
 
-  
-  const onSubmit = () => {
-    axios.post(url,{
-      id:uuidv4(),
-      title:input,
-      completed:false
+  const updateTodo = (title, id ,completed) =>{
+    axios.put(`${url}/${id}`, {
+      title,
+      id,
+      completed
     }).then((res)=>{
       setTodos(res.data);
     })
-    setInput("");
+  }
+
+  
+  const onSubmit = () => {
+    if(!edit) {
+      axios.post(url,{
+        id:uuidv4(),
+        title:input,
+        completed:false
+      }).then((res)=>{
+        setTodos(res.data);
+      })
+      setInput("");
+    }else {
+      updateTodo(input , edit.id ,edit.completed);
+    }
   }
   
   useEffect(()=>{
