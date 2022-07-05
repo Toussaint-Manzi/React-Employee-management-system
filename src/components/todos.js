@@ -1,6 +1,6 @@
 import { FaTimes,FaEdit } from 'react-icons/fa';
 
-const todos = ({ todos ,onDelete,edit,setEdit, onComplete }) => {
+const Todos = ({ todos ,onDelete,edit,setEdit, onComplete }) => {
 
   const handleEdit = ({id}) =>{
     if(!edit){
@@ -25,4 +25,4 @@ const todos = ({ todos ,onDelete,edit,setEdit, onComplete }) => {
   )
 }
 
-export default todos;
+export default Todos;

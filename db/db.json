@@ -1,14 +1,38 @@
 {
-  "tasks": [
+  "Tasks": [
     {
-      "title": "code",
-      "id": "e5980565-0b77-4627-845d-bf4d3a3e2f37",
+      "id": "3662a10c-fcc2-482e-9cd0-ef0c0d6c7885",
+      "title": "playing",
       "completed": false
     },
     {
-      "id": "8233aeda-f20d-4124-8651-b6c8be05ef01",
-      "title": "sleeping",
+      "title": "coding",
+      "id": "9e4f8516-ed86-4dbc-a12b-e5b6836d13fe",
       "completed": false
+    },
+    {
+      "title": "ETRT",
+      "id": "c16ff5c8-e64b-499c-b7f6-ec277d248308",
+      "completed": false
+    }
+  ],
+  "Employee": [
+    {
+      "id": "1",
+      "name": "Toussaint Manzi",
+      "position": "Ceo"
+    },
+    {
+      "id": "2",
+      "name": "Anto",
+      "position": "normal user"
+    },
+    {
+      "id": "adc5ecb6-ffa6-4a52-932f-d27422023758",
+      "name": "Arsene",
+      "email": "arsene@gmail.com",
+      "phone": "0788230589",
+      "password": "12345"
     }
   ]
 }

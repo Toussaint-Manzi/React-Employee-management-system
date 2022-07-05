@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 const Forms = ( { todos, input, setTodos, setInput,edit , setEdit } ) => {
 
-  const url = "http://localhost:8000/tasks"
+  const url = "http://localhost:8000/Tasks"
 
   const onChange = (e) =>{
     setInput (e.target.value);
