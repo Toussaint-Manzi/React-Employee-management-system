@@ -11,27 +11,25 @@
       "completed": false
     },
     {
-      "title": "ETRT",
+      "title": "eating",
       "id": "c16ff5c8-e64b-499c-b7f6-ec277d248308",
       "completed": false
     }
   ],
   "Employee": [
     {
-      "id": "1",
+      "id": "dIsgFf",
       "name": "Toussaint Manzi",
-      "position": "Ceo"
+      "email": "toussaint@gmail.com",
+      "phone": "0788230838",
+      "password": "12345",
+      "position": "casual"
     },
     {
-      "id": "2",
-      "name": "Anto",
-      "position": "normal user"
-    },
-    {
-      "id": "adc5ecb6-ffa6-4a52-932f-d27422023758",
-      "name": "Arsene",
-      "email": "arsene@gmail.com",
-      "phone": "0788230589",
+      "id": "6Lf5xi",
+      "name": "Arsene Eich",
+      "email": "eich@gmail.com",
+      "phone": "0788214431",
       "password": "12345"
     }
   ]

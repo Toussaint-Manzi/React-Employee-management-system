@@ -21,9 +21,30 @@ const Admin = () => {
   },[tasks])
 
   return (
-    <div>
-      {!isLoading ? (tasks.map(task => <div key ={task.id} className="line">{task.name}</div>
-      )) : <div>Loading...</div> }
+    <div className='admin'>
+      <h2>Admin dashboard</h2>
+      <ul>
+        <li className='dash'>
+          <h4>Employee Id</h4>
+          <h4>Names</h4>
+          <h4>Email</h4>
+          <h4>Phone number</h4>
+          <h4>Position</h4>
+        </li>
+        {!isLoading ? (tasks.map((task) =>{ 
+          const { id,name,email,phone,position } = task;
+        return(
+          <li key ={task.id} className="line dash">
+            <h4>{id}</h4>
+            <h4>{name}</h4>
+            <h4>{email}</h4>
+            <h4>{phone}</h4>
+            <h4>{position || 'Casual'}</h4>
+          </li> 
+        )
+        })) : <div>Loading...</div> }
+      </ul>
+      
     </div>
   )
 }

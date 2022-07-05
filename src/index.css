@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 body {
@@ -21,8 +22,7 @@ h5{
   height:80px;
   padding: 20px;
   background-color: #fff;
-  box-shadow: 0 0 5px 5px #c4c4c4;
-  /* position: relative; */
+  box-shadow: 0 0 10px  #c4c4c4;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -42,6 +42,11 @@ h5{
   position: absolute;
   height:50%;
 
+}
+
+.navBar .link:hover{
+  border-bottom: 2px solid #ccc;
+  transition: 0.5s ease;
 }
 
 .container {
@@ -76,18 +81,9 @@ h5{
   font-family: inherit;
 }
 
-/* .btn:focus {
-  outline: none;
-} */
-
 .btn:active {
   transform: scale(0.98);
 }
-
-/* .btn-block {
-  display: block;
-  width: 100%;
-} */
 
 .task {
   background: #e7e6e6;
@@ -152,6 +148,9 @@ footer {
 }
 
 /* register section */
+.register{
+  margin-top: -40px;
+}
 
 .register .container .form{
   display: flex;
@@ -161,11 +160,42 @@ footer {
 
 .register .container .form label{
   font-size: 15px;
-  margin: 10px 0px ;
+  margin: 10px 15% 5px;
 }
 
 .register .container .form input{
   height: 30px;
   width: 70%;
   margin: 0px auto;
+}
+
+
+.register .container .form button{
+  margin-top: 30px;
+}
+/* admin section */
+
+.admin{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.admin h2{
+  margin: 20px;
+}
+
+.admin li:nth-child(odd){
+  background-color: #e7e6e6;
+}
+
+.admin .dash{
+  display: flex;
+  flex-direction: row;
+  padding:10px 0px 0px 60px ;
+  height: 40px;
+}
+
+
+.admin .dash h4{
+  flex: 1;
 }

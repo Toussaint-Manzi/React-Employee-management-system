@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import axios from 'axios'
-import { v4 as uuidv4 } from 'uuid';
+import ShortUniqueId from 'short-unique-id';
+
 const Register = () => {
   const [ inputName,setInputName ] = useState('')
   const [ inputEmail,setInputEmail ] = useState('')
   const [ inputPhone,setInputPhone ] = useState('')
   const [ inputPassword,setInputPassword ] = useState('')
-  // const [ submitted, setSubmitted ] = useState(false)
+  const uid = new ShortUniqueId();
 
   const url = "http://localhost:8000/Employee";
 
@@ -27,13 +28,12 @@ const Register = () => {
 
   const onSubmit = () =>{
     axios.post(url,{
-      id:uuidv4(),
+      id: uid(),
       name:inputName,
       email:inputEmail,
       phone:inputPhone,
       password:inputPassword
     }).then(() =>{
-      // setSubmitted(true)
     })
   }
     
@@ -41,7 +41,7 @@ const Register = () => {
   return (
     <div className='register'>
         <div className="container">
-            <h3>Register</h3>
+            <h3>Register here.</h3>
             <form className='form' onSubmit={onSubmit}>
                 <label>Name</label>
                 <input type="text" placeholder='Enter name' value={inputName} onChange={onChange1}/>
@@ -53,8 +53,6 @@ const Register = () => {
                 <input type="password" placeholder='Enter Password'value={inputPassword} onChange={onChange4}/>
                 <button className='btn' type='onSubmit'>Submit</button>
             </form>
-            {/* {submitted && <h3>Account succesfully created</h3>}
-            {console.log(submitted)} */}
         </div>
     </div>
   )
