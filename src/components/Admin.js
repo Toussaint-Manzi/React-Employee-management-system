@@ -1,16 +1,47 @@
 import { useState,useEffect } from 'react'
 import axios from 'axios'
+import jsPDF from "jspdf";
+import autoTable from 'jspdf-autotable';
+import { CSVLink, CSVDownload } from "react-csv";
+
 
 const Admin = () => {
 
   const [ tasks, setTasks ] = useState([]);
   const [isLoading , setisLoading] = useState(true)
   const url = "http://localhost:8000/Employee";
+  const doc = new jsPDF();
+  
 
 
-  // const getAllTasks = () =>{
+  const assignCsvData = () =>{
+    let arr = [['EmployeeId','Name', 'Email','Phone number', 'Position']]
+    for (let i=0;i<tasks.length;i++){
+      arr.push(Object.values(tasks[i]));
+      
+    }
+    return arr;
+  }
 
-  // }
+  const csvData = assignCsvData();
+
+
+  const pdfDownloader = () =>{
+    let arr = []
+    for (let i=0;i<tasks.length;i++){
+      arr.push(Object.values(tasks[i]));
+      
+    }
+    console.log(arr);
+
+    autoTable(doc, {
+      title: 'Employees data',
+      head: [['EmployeeId','Name', 'Email','Phone number', 'Position']],
+      body: arr,
+    })
+    doc.save('Employee data');
+  }
+
 
   useEffect(()=>{
     axios.get(url).then((res)=>{
@@ -22,6 +53,8 @@ const Admin = () => {
   return (
     <div className='admin'>
       <h2>Admin dashboard</h2>
+      <button onClick={pdfDownloader}>Download a pdf</button>
+      <CSVLink data={csvData}>Download me</CSVLink>
       <ul>
         <li className='dash'>
           <h4>Employee Id</h4>

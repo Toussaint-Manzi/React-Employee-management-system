@@ -14,7 +14,6 @@ const Todo = () => {
     axios.delete(`${url}/${id}`).then((res)=>{
       setTodos(res.data);
     })
-    // setTodos(todos.filter((todo) => todo.id !== id));
   }
 
   return (

@@ -22,14 +22,15 @@
       "name": "Toussaint Manzi",
       "email": "toussaint@gmail.com",
       "phone": "0788230838",
-      "password": "12345",
-      "position": "casual"
+      "position": "casual",
+      "password": "12345"
     },
     {
       "id": "6Lf5xi",
       "name": "Arsene Eich",
       "email": "eich@gmail.com",
       "phone": "0788214431",
+      "position": "casual",
       "password": "12345"
     },
     {
@@ -37,6 +38,7 @@
       "name": "mudahogora",
       "email": "mudahogora@gmail.com",
       "phone": "07856296352",
+      "position": "casual",
       "password": "12345"
     },
     {
@@ -44,6 +46,23 @@
       "name": "justin",
       "email": "jus@gmail.com",
       "phone": "01258936",
+      "position": "casual",
+      "password": "12345"
+    },
+    {
+      "id": "oql9MC",
+      "name": "WAKIBWA WE ",
+      "email": "agacupa@gmail.com",
+      "phone": "021547889",
+      "position": "casual",
+      "password": "fdghj"
+    },
+    {
+      "id": "2F2E54",
+      "name": "jackie",
+      "email": "jack@gmail.com",
+      "phone": "5421654",
+      "position": "casual",
       "password": "12345"
     }
   ]
