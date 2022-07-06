@@ -38,10 +38,14 @@ h5{
   margin: 0px 10px;
 }
 
-.navbar .klab{
+/* .navbar .klab{
   position: absolute;
   height:50%;
+} */
 
+.navBar .headerTitle{
+  margin-left: -650px;
+  padding-top: 5px;
 }
 
 .navBar .link:hover{
@@ -112,7 +116,7 @@ h5{
 }
 
 .form-control {
-  margin: 20px 0;
+  margin-top: -20px 0;
 }
 
 .form-control label {
@@ -198,4 +202,28 @@ footer {
 
 .admin .dash h4{
   flex: 1;
+}
+
+/* Login section */
+
+.Lform {
+  display: flex;
+  flex-direction: column;
+}
+
+.Lform label{
+  font-size: 15px;
+  margin: 10px 15% 5px;
+}
+
+.container .Lform input{
+  height: 30px;
+  width: 70%;
+  margin: 0px auto;
+}
+
+.container .Lform button{
+  margin-top: 30px;
+  width: 70%;
+  margin: 30px auto;
 }

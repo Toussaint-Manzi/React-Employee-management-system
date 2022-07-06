@@ -15,7 +15,6 @@ const Admin = () => {
   useEffect(()=>{
     axios.get(url).then((res)=>{
         setTasks(res.data);
-        // console.log(tasks)
         setisLoading (false);
     })
   },[tasks])

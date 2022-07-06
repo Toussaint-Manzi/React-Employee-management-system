@@ -1,9 +1,9 @@
-import { BrowserRouter, Routes, Route,Switch } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Todo from "./components/Todo";
 import Register from "./components/Register";
 import Admin from "./components/Admin";
 import NavBar from "./components/NavBar";
-// import NoPage from "./components/NoPage";
+import AdminLogin from "./components/AdminLogin";
 
 export default function App() {
   return (
@@ -14,8 +14,8 @@ export default function App() {
             <Route index element={<Register />} />
             <Route path="/todo" element={<Todo />} />
             <Route path="/admin" element={<Admin />} />
-            {/* <Route path="contact" element={<Contact />} />
-            <Route path="*" element={<NoPage />} /> */}
+            {/* <Route path="contact" element={<Contact />} /> */}
+            <Route path="/adminlogin" element={<AdminLogin />} />
         </Routes>
       </BrowserRouter>
     </>
