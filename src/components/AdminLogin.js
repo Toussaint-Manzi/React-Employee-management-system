@@ -21,7 +21,7 @@ const AdminLogin = () => {
       localStorage.setItem("Password" , inputPassword)
       navigate("/admin")
     }else {
-      alert("Wrong password")
+      alert("Entered Wrong password")
     }
   }
 

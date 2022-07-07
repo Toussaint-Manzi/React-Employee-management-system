@@ -6,13 +6,18 @@
       "completed": false
     },
     {
-      "title": "coding",
+      "title": "code",
       "id": "9e4f8516-ed86-4dbc-a12b-e5b6836d13fe",
       "completed": false
     },
     {
       "title": "eating",
       "id": "c16ff5c8-e64b-499c-b7f6-ec277d248308",
+      "completed": false
+    },
+    {
+      "id": "c1490312-c24f-4fa6-a22e-4f4de2b36e8a",
+      "title": "sdfdsfsd",
       "completed": false
     }
   ],
@@ -63,6 +68,13 @@
       "email": "jack@gmail.com",
       "phone": "5421654",
       "position": "casual",
+      "password": "12345"
+    },
+    {
+      "id": "pmy2xo",
+      "name": "alvin",
+      "email": "alvin@gmail.com",
+      "phone": "078562263652",
       "password": "12345"
     }
   ]

@@ -2,7 +2,7 @@ import { useState,useEffect } from 'react'
 import axios from 'axios'
 import jsPDF from "jspdf";
 import autoTable from 'jspdf-autotable';
-import { CSVLink, CSVDownload } from "react-csv";
+import { CSVLink } from "react-csv";
 
 
 const Admin = () => {
@@ -30,12 +30,10 @@ const Admin = () => {
     let arr = []
     for (let i=0;i<tasks.length;i++){
       arr.push(Object.values(tasks[i]));
-      
     }
-    console.log(arr);
 
     autoTable(doc, {
-      title: 'Employees data',
+      title: ['Employees data'],
       head: [['EmployeeId','Name', 'Email','Phone number', 'Position']],
       body: arr,
     })
@@ -53,8 +51,6 @@ const Admin = () => {
   return (
     <div className='admin'>
       <h2>Admin dashboard</h2>
-      <button onClick={pdfDownloader}>Download a pdf</button>
-      <CSVLink data={csvData}>Download me</CSVLink>
       <ul>
         <li className='dash'>
           <h4>Employee Id</h4>
@@ -66,7 +62,7 @@ const Admin = () => {
         {!isLoading ? (tasks.map((task) =>{ 
           const { id,name,email,phone,position } = task;
         return(
-          <li key ={task.id} className="line dash">
+          <li key ={id} className="line dash">
             <h4>{id}</h4>
             <h4>{name}</h4>
             <h4>{email}</h4>
@@ -76,7 +72,10 @@ const Admin = () => {
         )
         })) : <div>Loading...</div> }
       </ul>
-      
+      <div className='abtn'>
+        <button onClick={pdfDownloader} className='btn'>Download a pdf</button>
+        <CSVLink data={csvData} className='btn'>Download Csv</CSVLink>
+      </div>
     </div>
   )
 }

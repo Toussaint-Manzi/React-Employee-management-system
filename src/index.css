@@ -204,6 +204,10 @@ footer {
   flex: 1;
 }
 
+.admin .abtn{
+  float: right;
+}
+
 /* Login section */
 
 .Lform {

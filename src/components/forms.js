@@ -40,7 +40,7 @@ const Forms = ( { todos, input, setTodos, setInput,edit , setEdit } ) => {
     axios.get(url).then((res)=>{
         setTodos(res.data);
     })
-  },[todos])
+  },[todos,setTodos])
   return (
     <div>
         <form onSubmit={ onSubmit } className='form-control  form-control-check'>
