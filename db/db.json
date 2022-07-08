@@ -23,58 +23,24 @@
   ],
   "Employee": [
     {
-      "id": "dIsgFf",
-      "name": "Toussaint Manzi",
-      "email": "toussaint@gmail.com",
-      "phone": "0788230838",
-      "position": "casual",
-      "password": "12345"
-    },
-    {
-      "id": "6Lf5xi",
-      "name": "Arsene Eich",
-      "email": "eich@gmail.com",
-      "phone": "0788214431",
-      "position": "casual",
-      "password": "12345"
-    },
-    {
-      "id": "5J1dDt",
-      "name": "mudahogora",
-      "email": "mudahogora@gmail.com",
-      "phone": "07856296352",
-      "position": "casual",
-      "password": "12345"
-    },
-    {
-      "id": "6Wmi6n",
-      "name": "justin",
-      "email": "jus@gmail.com",
-      "phone": "01258936",
-      "position": "casual",
-      "password": "12345"
-    },
-    {
-      "id": "oql9MC",
-      "name": "WAKIBWA WE ",
-      "email": "agacupa@gmail.com",
-      "phone": "021547889",
-      "position": "casual",
-      "password": "fdghj"
-    },
-    {
-      "id": "2F2E54",
-      "name": "jackie",
-      "email": "jack@gmail.com",
-      "phone": "5421654",
-      "position": "casual",
-      "password": "12345"
-    },
-    {
-      "id": "pmy2xo",
-      "name": "alvin",
+      "id": 1,
+      "name": "Alvin",
       "email": "alvin@gmail.com",
-      "phone": "078562263652",
+      "phone": "0788569632",
+      "password": "12345"
+    },
+    {
+      "id": "0x5kAf",
+      "name": "gfchgvjbknl",
+      "email": "tdxcfgvjhbk@gmi.mjh",
+      "phone": "764136532",
+      "password": "drftygihu"
+    },
+    {
+      "id": "e8VMrN",
+      "name": "txdcfgvhbkjnl",
+      "email": "xfdgcfhvjb@gmail.com",
+      "phone": "072589632",
       "password": "12345"
     }
   ]

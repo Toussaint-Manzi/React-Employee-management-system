@@ -7,6 +7,7 @@ const Register = () => {
   const [ inputEmail,setInputEmail ] = useState('')
   const [ inputPhone,setInputPhone ] = useState('')
   const [ inputPassword,setInputPassword ] = useState('')
+  // let a = 1;
   const uid = new ShortUniqueId();
 
   const url = "http://localhost:8000/Employee";

@@ -85,6 +85,14 @@ h5{
   font-family: inherit;
 }
 
+/* .btn:hover{
+  background: #fff;
+  border: 1px solid #000;
+  font-weight: 600;
+  color: #000;
+  transition: 0.5s;
+} */
+
 .btn:active {
   transform: scale(0.98);
 }
@@ -206,6 +214,26 @@ footer {
 
 .admin .abtn{
   float: right;
+}
+
+.admin .line{
+  display: flex;
+  flex-direction: row;
+  padding:10px 0px 0px 60px ;
+  height: 40px;
+}
+
+.admin .line h4{
+  font-weight:400;
+  flex: 1;
+}
+
+.admin .links:hover{
+    background: #fff;
+    border: 1px solid rgb(202, 161, 161);
+    font-weight: 600;
+    color: #000;
+    transition: 0.5s ease;
 }
 
 /* Login section */
