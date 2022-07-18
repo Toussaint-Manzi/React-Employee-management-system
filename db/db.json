@@ -16,8 +16,8 @@
       "completed": false
     },
     {
+      "title": "movie",
       "id": "c1490312-c24f-4fa6-a22e-4f4de2b36e8a",
-      "title": "sdfdsfsd",
       "completed": false
     }
   ],
@@ -41,6 +41,20 @@
       "name": "txdcfgvhbkjnl",
       "email": "xfdgcfhvjb@gmail.com",
       "phone": "072589632",
+      "password": "12345"
+    },
+    {
+      "id": "eTFYN7",
+      "name": "Fulgence",
+      "email": "ful@gmail.com",
+      "phone": "07882358896",
+      "password": "12345"
+    },
+    {
+      "id": "1B1v1n",
+      "name": "patrick",
+      "email": "p@gmail.com",
+      "phone": "07859652632",
       "password": "12345"
     }
   ]

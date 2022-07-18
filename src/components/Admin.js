@@ -50,13 +50,15 @@ const Admin = () => {
   return (
     <div className='admin'>
       <h2>Admin dashboard</h2>
-      <ul>
+      <ul className='ulA'>
         <li className='dash'>
           <h4>Employee Id</h4>
           <h4>Names</h4>
           <h4>Email</h4>
           <h4>Phone number</h4>
           <h4>Position</h4>
+          <h4>Update</h4>
+          <h4>Delete</h4>
         </li>
         {!isLoading ? (tasks.map((task) =>{ 
           const { id,name,email,phone,position } = task;
@@ -67,6 +69,8 @@ const Admin = () => {
             <h4>{email}</h4>
             <h4>{phone}</h4>
             <h4>{position || 'Casual'}</h4>
+            <h4 className='btnD' variant='danger'>Update</h4>
+            <h4 className='btnU'>Delete</h4>
           </li> 
         )
         })) : <div>Loading...</div> }

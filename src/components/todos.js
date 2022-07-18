@@ -1,6 +1,12 @@
 import { FaTimes,FaEdit } from 'react-icons/fa';
+// import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch,useSelector } from 'react-redux'
+import { deleteTodo, getAllTodos, todoSelector } from '../features/todoApp'
 
-const Todos = ({ todos ,onDelete,edit,setEdit, onComplete }) => {
+const Todos = ({ edit,setEdit, onComplete }) => {
+
+    const dispatch = useDispatch();
+    const { todos } = useSelector(todoSelector);
 
   const handleEdit = ({id}) =>{
     if(!edit){
@@ -10,6 +16,15 @@ const Todos = ({ todos ,onDelete,edit,setEdit, onComplete }) => {
       setEdit(null)
     }
 
+  }
+
+  const onDelete = (id) => {
+    // axios.delete(`${url}/${id}`).then((res)=>{
+    //   setTodos(res.data);
+    // })
+    console.log(id)
+    dispatch(deleteTodo(id));
+    dispatch(getAllTodos())
   }
 
   return (

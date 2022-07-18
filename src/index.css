@@ -44,7 +44,7 @@ h5{
 } */
 
 .navBar .headerTitle{
-  margin-left: -550px;
+  margin-left: -450px;
   padding-top: 5px;
 }
 
@@ -221,6 +221,7 @@ footer {
   flex-direction: row;
   padding:10px 0px 0px 60px ;
   height: 40px;
+  /* justify-content: flex-start; */
 }
 
 .admin .line h4{
@@ -234,6 +235,18 @@ footer {
     font-weight: 600;
     color: #000;
     transition: 0.5s ease;
+}
+
+/* .ulA{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+} */
+
+.btnD{
+  border:1px solid green;
+  height: 30px;
+  width: 50px;
 }
 
 /* Login section */

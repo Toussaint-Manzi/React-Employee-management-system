@@ -15,7 +15,7 @@ const NavBar = () => {
         <ul className="list">
             <li><Link to="/" className='link'>Register</Link></li>
             <li><Link to="/adminlogin" className='link'>Admin Login</Link></li>
-            <li><Link to="/todo" className='link'>To do</Link></li>
+            <li><Link to="/todo" className='link'>Employee Tasks</Link></li>
             <li><Link to="/logout" className='link' onClick={handleLogout}>Logout</Link></li> 
         </ul>
     </div>
